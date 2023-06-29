@@ -1,0 +1,357 @@
+/*Inicio de Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 0px !important ; 
+}
+ol, ul {
+    padding-left: 0px !important;
+    margin: 0px;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.navbar-brand {
+    margin-right:0px !important;
+}
+h2{
+    margin-bottom: 0px !important; 
+}
+/*Fin de Reset*/
+/*Inicio Estilos del Header*/
+.header1{
+    background-color: #245178;
+    place-content: center;
+}
+.header1__text{
+    text-align: center;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.header1__icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.header1__icons_icon{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: space-evenly;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3374AB;
+}
+.header2{
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+}
+.header2__logo{
+    display: flex;
+    align-content: center;
+    margin-right: 0px !important;    
+}
+.header2__bar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.header2__bar__links{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    color: #3374AB;
+}
+.header2__bar__icon{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    color: #3374AB;
+    font-size: 22px;
+}
+/*Fin Estilos del Header*/
+/*Inicio Estilos del Footer*/
+.footer__logo{
+    width: 50%;
+    display: inline-block;
+    margin-right: 0px !important;   
+}
+.sitio__construccion{
+    background-image: url(../img/Icons/SITIO-EN-CONSTRUCCION.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+}
+/*Fin Estilos del Footer*/
+/*Inicio Estilos de Home*/
+.home__img__presentacion{
+        background-image: url(./img/Home/presentacion.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        width: 100%;
+}
+.home__txt__presentacion{
+    color: white;
+    text-shadow: 0 0 40px #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.home__boton__presentacion{
+    font-weight: bold;
+    background-color: #245178 !important;
+}
+.home__boton__presentacion:hover{
+    color: #fff !important;
+}
+.home__carousel__img{
+    height: 80vh !important;
+}
+.home__img_colaboradoras{
+    width: 120px;
+    height: auto;
+    padding: 2vh;
+    align-content: center;
+}
+.home__container__img__colaboradoras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+}
+.home__container__img__colaboradoras:hover{
+    transition: 0.7s;
+    transform: scale(1.4);
+}
+.home__cards{
+    display: flex;
+    justify-content: space-around;
+}
+/*Fin Estilos de Home*/
+/*Inicio Estilos de Servicios*/
+.servicios__img{
+    width: 600px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.servicios__img1{
+    background-image: url(./img/servicios/servicios1.jpg);
+}
+.servicios__img2{
+    background-image: url(./img/servicios/servicios4.jpeg);
+}
+.servicios__img3{
+    background-image: url(./img/servicios/servicios3.jpg);
+}
+.servicios__img4{
+    background-image: url(./img/servicios/servicios5.jpg);
+}
+.servicios__img5{
+    background-image: url(./img/servicios/servicios6.jpg);
+}
+.servicios__img6{
+    background-image: url(./img/servicios/servicios7.jpg);
+}
+.servicios__img7{
+    background-image: url(./img/servicios/servicios8.jpg);
+}
+.servicios__bg{
+    background-color: #245178;
+    place-content: center;
+}
+/*Fin Estilos de Servicios*/
+/*Inicio Estilos de Somos*/
+.somos__img{
+    width: 800px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.somos__img1{
+    background-image: url(./img/Somos/somos1.jpg);
+    background-position: right !important;
+}
+.somos__img2{
+    background-image: url(./img/Somos/somos2.jpg);
+}
+.somos__img3{
+    background-image: url(./img/Somos/somos3.jpg);
+}
+/*Fin Estilos de Somos*/
+/*Inicio Estilos de Portfolio*/
+.portfolio__img{
+    height: 350px;
+    width: 250px;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: #245178 solid 3px;
+}
+.portfolio__bautismos1{
+    background-image: url(./img/Portfolio/bautismo1.jpg);
+}
+.portfolio__bautismos2{
+    background-image: url(./img/Portfolio/bautismo2.jpg);
+}
+.portfolio__bautismos3{
+    background-image: url(./img/Portfolio/bautismo3.jpg);
+}
+.portfolio__bautismos4{
+    background-image: url(./img/Portfolio/bautismo4.jpg);
+}
+.portfolio__bautismos5{
+    background-image: url(./img/Portfolio/bautismo5.jpg);
+}
+.portfolio__bautismos6{
+    background-image: url(./img/Portfolio/bautismo6.jpg);
+}
+.portfolio__bautismos7{
+    background-image: url(./img/Portfolio/bautismo7.jpg);
+}
+.portfolio__bautismos8{
+    background-image: url(./img/Portfolio/bautismo8.jpg);
+}
+.portfolio__bautismos9{
+    background-image: url(./img/Portfolio/bautismo9.jpg);
+}
+.portfolio__bautismos10{
+    background-image: url(./img/Portfolio/bautismo10.jpg);
+}
+.portfolio__cumple1{
+    background-image: url(./img/Portfolio/cumple1.jpg);
+}
+.portfolio__cumple2{
+    background-image: url(./img/Portfolio/cumple2.jpg);
+}
+.portfolio__cumple3{
+    background-image: url(./img/Portfolio/cumple3.jpg);
+}
+.portfolio__cumple4{
+    background-image: url(./img/Portfolio/cumple4.jpg);
+}
+.portfolio__cumple5{
+    background-image: url(./img/Portfolio/cumple5.jpg);
+}
+.portfolio__cumple6{
+    background-image: url(./img/Portfolio/cumple6.jpg);
+}
+.portfolio__cumple7{
+    background-image: url(./img/Portfolio/cumple7.jpg);
+}
+.portfolio__comuniones1{
+    background-image: url(./img/Portfolio/comunion1.jpg);
+}
+.portfolio__comuniones2{
+    background-image: url(./img/Portfolio/comunion2.jpg);
+}
+.portfolio__comuniones3{
+    background-image: url(./img/Portfolio/comunion3.jpg);
+}
+.portfolio__comuniones4{
+    background-image: url(./img/Portfolio/comunion4.jpg);
+}
+.portfolio__comuniones5{
+    background-image: url(./img/Portfolio/comunion5.jpg);
+}
+.portfolio__comuniones6{
+    background-image: url(./img/Portfolio/comunion6.jpg);
+}
+.portfolio__comuniones7{
+    background-image: url(./img/Portfolio/comunion7.jpg);
+}
+.portfolio__comuniones8{
+    background-image: url(./img/Portfolio/comunion8.jpg);
+}
+.portfolio__comuniones9{
+    background-image: url(./img/Portfolio/comunion9.jpg);
+}
+.portfolio__comuniones10{
+    background-image: url(./img/Portfolio/comunion10.jpg);
+}
+.portfolio__bodas1{
+    background-image: url(./img/Portfolio/boda1.jpg);
+}
+.portfolio__bodas2{
+    background-image: url(./img/Portfolio/boda2.jpg);
+}
+.portfolio__bodas3{
+    background-image: url(./img/Portfolio/boda3.jpg);
+}
+.portfolio__bodas4{
+    background-image: url(./img/Portfolio/boda4.jpg);
+}
+.portfolio__bodas5{
+    background-image: url(./img/Portfolio/boda5.jpg);
+}
+.portfolio__bodas6{
+    background-image: url(./img/Portfolio/boda6.jpg);
+}
+.portfolio__bodas7{
+    background-image: url(./img/Portfolio/boda7.jpg);
+}
+.portfolio__bodas8{
+    background-image: url(./img/Portfolio/boda8.jpg);
+}
+.portfolio__bodas9{
+    background-image: url(./img/Portfolio/boda9.jpg);
+}
+.portfolio__empresariales1{
+    background-image: url(./img/Portfolio/empresarial1.jpg);
+}
+.portfolio__empresariales2{
+    background-image: url(./img/Portfolio/empresarial2.jpg);
+}
+.portfolio__empresariales3{
+    background-image: url(./img/Portfolio/empresarial3.jpg);
+}
+.portfolio__empresariales4{
+    background-image: url(./img/Portfolio/empresarial4.jpg);
+}
+.portfolio__empresariales5{
+    background-image: url(./img/Portfolio/empresarial5.jpg);
+}
+.portfolio__especiales1{
+    background-image: url(./img/Portfolio/especiales1.jpg);
+}
+.portfolio__especiales2{
+    background-image: url(./img/Portfolio/especiales2.jpg);
+}
+.portfolio__especiales3{
+    background-image: url(./img/Portfolio/especiales3.jpg);
+}
+.portfolio__especiales4{
+    background-image: url(./img/Portfolio/especiales4.webp);
+}
+.portfolio__especiales5{
+    background-image: url(./img/Portfolio/especiales5.jpg);
+}
+.portfolio__especiales6{
+    background-image: url(./img/Portfolio/especiales6.jpg);
+}
+.portfolio__especiales7{
+    background-image: url(./img/Portfolio/especiales7.png);
+}
+.portfolio__especiales8{
+    background-image: url(./img/Portfolio/especiales8.jpg);
+}
+.portfolio__especiales9{
+    background-image: url(./img/Portfolio/especiales9.jpg);
+}
+/*Fin Estilos de Portfolio*/
