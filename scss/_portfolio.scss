@@ -18,7 +18,7 @@
 @for $in from 1 through 10{
     @each $port in bautismos , cumples , comuniones , bodas , empresariales , especiales{
     .portfolio__#{$port}#{$in} {
-        background-image: url(./img/portfolio/#{$port}#{$in}.webp);
+        background-image: url(./img/Portfolio/#{$port}#{$in}.webp);
         }
     }
 } 
