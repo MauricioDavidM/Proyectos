@@ -1,0 +1,52 @@
+.home__img__presentacion {
+    background-image: url(./img/home/presentacion.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+}
+
+.home__txt__presentacion {
+    color: $color_blanco;
+    text-shadow: 0 0 40px $color_negro;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home__boton__presentacion {
+    font-weight: bold;
+    background-color: $color_primario !important;
+}
+
+.home__boton__presentacion:hover {
+    color: $color_blanco !important;
+}
+
+.home__carousel__img {
+    height: 65vh !important;
+}
+
+.home__img_colaboradoras {
+    width: 100%;
+    height: auto;
+    padding: 2vh;
+    align-content: center;
+}
+
+.home__container__img__colaboradoras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+.home__container__img__colaboradoras:hover {
+    transition: 0.7s;
+    transform: scale(1.4);
+}
+
+.home__cards {
+    display: flex;
+    justify-content: space-around;
+}

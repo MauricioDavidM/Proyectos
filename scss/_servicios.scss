@@ -1,0 +1,17 @@
+.servicios__img{
+    width: 600px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@for $in from 1 through 8{
+    .servicios__img#{$in} {
+        background-image: url(./img/servicios/servicios#{$in}.webp);
+    }
+}
+.servicios__bg{
+    background-color: $color_primario;
+    place-content: center;
+}
