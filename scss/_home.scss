@@ -1,52 +1,36 @@
 .home__img__presentacion {
+    @include fotos(100%,"", no-repeat, left bottom, cover);
     background-image: url(./img/Home/presentacion.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    width: 100%;
 }
-
 .home__txt__presentacion {
-    color: $color_blanco;
-    text-shadow: 0 0 40px $color_negro;
+    @include font($color_blanco, "", bold,"");
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-weight: bold;
+    text-shadow: 0 0 40px $color_negro;
 }
-
 .home__boton__presentacion {
-    font-weight: bold;
     background-color: $color_primario !important;
+    font-weight: bold;
 }
-
 .home__boton__presentacion:hover {
     color: $color_blanco !important;
 }
-
 .home__carousel__img {
     height: 65vh !important;
 }
-
 .home__img_colaboradoras {
-    width: 100%;
-    height: auto;
-    padding: 2vh;
+    @include position(auto, 100%, "", "");
     align-content: center;
+    padding: 2vh;
 }
-
 .home__container__img__colaboradoras {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include header(center, "", flex, center, "");
     transition: 0.7s;
 }
-
 .home__container__img__colaboradoras:hover {
-    transition: 0.7s;
     transform: scale(1.4);
+    transition: 0.7s;
 }
-
 .home__cards {
-    display: flex;
-    justify-content: space-around;
+    @include header("", "", flex, space-around, "");
 }

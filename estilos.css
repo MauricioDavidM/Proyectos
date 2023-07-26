@@ -1,7 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caprasimo&family=Rowdies&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #245178;
+  font-size: 30px;
+  font-weight: "";
+  list-style: "";
+  font-family: "Rowdies", cursive;
+  text-transform: uppercase;
 }
 
 p, h2 {
@@ -13,131 +23,43 @@ ol, ul {
   margin: 0px;
 }
 
-.row {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+.btn-link {
+  color: #245178;
+  font-size: large;
+  font-weight: bold;
+  list-style: "";
+  text-decoration: none !important;
+}
+
+.btn-link:hover {
+  color: orange !important;
+}
+
+.btn-outline-dark {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: rgb(242, 239, 239);
+  color: #000;
 }
 
 .navbar-brand {
   margin-right: 0px !important;
 }
 
-.p-white {
-  color: #fff;
-  font-size: 18px;
-}
-.p-white span {
-  font-weight: bolder;
-  color: orange;
+.navbar-toggler {
+  border: none;
 }
 
-.p-black {
-  color: #000;
-  font-size: 18px;
-}
-.p-black span {
-  font-weight: bolder;
-  color: #245178;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-.header1 {
-  background-color: #245178;
-  place-content: center;
-}
-
-.header1__text {
-  text-align: center;
-  font-size: 16px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #fff;
-}
-
-.header1__icons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-}
-
-.header1__icons_icon {
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  justify-content: space-evenly;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #245178;
-}
-
-.header2 {
-  background-color: #fff;
-  height: auto;
-  width: 100%;
-}
-
-.header2__logo {
-  display: flex;
-  align-content: center;
+.row {
+  margin-left: 0px !important;
   margin-right: 0px !important;
-}
-
-.header2__bar {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-}
-
-.header2__bar__links {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-  justify-content: space-around;
-  color: #245178;
-}
-
-.header2__bar__icon {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-  justify-content: space-around;
-  color: #245178;
-  font-size: 22px;
-}
-
-.footer__logo {
-  width: 50%;
-  display: inline-block;
-  margin-right: 0px !important;
-}
-
-.sitio__construccion {
-  background-image: url(../img/icons/sitio-en-construccion.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  width: 100%;
-}
-
-.up {
-  bottom: 23px;
-  right: 20px;
-  background-color: orange;
-  box-shadow: 0 0 5px #fff, 0 0 5px #fff;
-  border-radius: 55%;
-  color: #245178;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  justify-content: space-evenly;
-}
-
-.complementario {
-  color: orange;
 }
 
 .color {
@@ -148,25 +70,181 @@ ol, ul {
   background-color: #245178;
 }
 
+.p-black {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+}
+.p-black span {
+  font-weight: bolder;
+  color: #245178;
+}
+
+.p-complementary {
+  color: orange;
+}
+
+.p-white {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.p-white span {
+  font-weight: bolder;
+  color: orange;
+}
+
+.header1 {
+  background-color: #245178;
+  justify-content: center;
+}
+
+.header1__icons {
+  align-items: center;
+  color: "";
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: "";
+  text-align: center;
+}
+
+.header1__icons_icon {
+  align-items: center;
+  color: #245178;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  height: 30px;
+  width: 30px;
+  right: "";
+  left: "";
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.header2 {
+  height: auto;
+  width: 100%;
+  right: "";
+  left: "";
+  background-color: #fff;
+}
+
+.header2__logo {
+  align-content: center;
+  display: flex;
+  margin-right: 0px !important;
+}
+
+.header2__bar {
+  color: #245178;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: "";
+  font-family: "Rowdies", cursive;
+}
+
+.header2__bar__links {
+  align-items: "";
+  color: #245178;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: "";
+  font-size: 22px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.header2__bar__links:hover {
+  color: orange;
+}
+
+.header2__bar__icon {
+  align-items: "";
+  color: #245178;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: "";
+  font-size: 22px;
+  font-weight: "";
+  list-style: none;
+}
+
+.favicon {
+  width: 30px;
+  vertical-align: baseline;
+}
+
+#person {
+  --bs-gutter-x: 0rem !important;
+}
+
+.logo {
+  --bs-gutter-x: 1rem !important;
+}
+
+.footer {
+  color: #245178;
+}
+
+.footer:visited {
+  color: #245178;
+}
+
+.footer:hover {
+  color: orange;
+}
+
+.footer__text {
+  font-size: 19px;
+}
+
+.footer_border {
+  border-left: 4px solid #245178;
+}
+
+.up {
+  align-items: center;
+  color: #245178;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  left: "";
+  background-color: orange;
+  border-radius: 55%;
+  bottom: 23px;
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff;
+  font-size: 30px;
+}
+
 .home__img__presentacion {
-  background-image: url(./img/Home/presentacion.webp);
-  background-size: cover;
+  width: 100%;
+  height: "";
   background-repeat: no-repeat;
   background-position: left bottom;
-  width: 100%;
+  background-size: cover;
+  background-image: url(./img/Home/presentacion.webp);
 }
 
 .home__txt__presentacion {
   color: #fff;
-  text-shadow: 0 0 40px #000;
+  font-size: "";
+  font-weight: bold;
+  list-style: "";
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
-  font-weight: bold;
+  text-shadow: 0 0 40px #000;
 }
 
 .home__boton__presentacion {
-  font-weight: bold;
   background-color: #245178 !important;
+  font-weight: bold;
 }
 
 .home__boton__presentacion:hover {
@@ -178,27 +256,34 @@ ol, ul {
 }
 
 .home__img_colaboradoras {
-  width: 100%;
   height: auto;
-  padding: 2vh;
+  width: 100%;
+  right: "";
+  left: "";
   align-content: center;
+  padding: 2vh;
 }
 
 .home__container__img__colaboradoras {
-  display: flex;
   align-items: center;
+  color: "";
+  display: flex;
   justify-content: center;
+  text-decoration: "";
   transition: 0.7s;
 }
 
 .home__container__img__colaboradoras:hover {
-  transition: 0.7s;
   transform: scale(1.4);
+  transition: 0.7s;
 }
 
 .home__cards {
+  align-items: "";
+  color: "";
   display: flex;
   justify-content: space-around;
+  text-decoration: "";
 }
 
 .somos__img {
@@ -265,24 +350,6 @@ ol, ul {
 .servicios__bg {
   background-color: #245178;
   place-content: center;
-}
-
-.porfolio__links {
-  text-decoration: none;
-}
-
-.porfolio__links:hover {
-  color: orange;
-}
-
-.portfolio__img {
-  height: 350px;
-  width: 250px;
-  align-content: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border: #245178 solid 3px;
 }
 
 .portfolio__bautismos1 {
@@ -525,6 +592,28 @@ ol, ul {
   background-image: url(./img/Portfolio/especiales10.webp);
 }
 
+.portfolio__img {
+  width: 250px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  align-content: center;
+  border: #245178 solid 3px;
+}
+
+.porfolio__links {
+  text-decoration: none;
+}
+
+.porfolio__links:hover {
+  color: orange;
+}
+
+.portfolio_border {
+  border-bottom: 85px solid #245178;
+}
+
 .contacto__link {
   text-decoration: underline;
   color: #fff;
@@ -532,6 +621,10 @@ ol, ul {
 
 .contacto__link:hover {
   color: orange;
+}
+
+.contacto__datos {
+  border: 9px solid #245178;
 }
 
 /*# sourceMappingURL=estilos.css.map */

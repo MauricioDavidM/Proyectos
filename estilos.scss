@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caprasimo&family=Rowdies&display=swap');
+// font-family: 'Alfa Slab One', cursive;
+// font-family: 'Caprasimo', cursive;
+// font-family: 'Rowdies', cursive;
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +11,40 @@ $color_primario: #245178;
 $color_complementario: orange;
 $color_blanco: #fff;
 $color_negro: #000;
+$color_hover: rgb(242, 239, 239);
+$color_active: rgba(125, 125, 125, 0.937);
 
+@mixin font($color, $font-size, $font-weight, $list-style){
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    list-style: $list-style;
+}
+@mixin fotos($width, $height, $background-repeat, $background-position, $background-size){
+    width: $width;
+    height: $height;
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+}
+@mixin header($align-items, $color, $display, $justify-content, $text-decoration){
+    align-items: $align-items;
+    color: $color;
+    display: $display;
+    justify-content: $justify-content;
+    text-decoration: $text-decoration;
+}
+@mixin position($height, $width, $right, $left){
+    height: $height;
+    width: $width;
+    right: $right;
+    left: $left;
+}
+h1, h2{
+    @include font($color_primario, 30px, "", "");
+    font-family: 'Rowdies', cursive;
+    text-transform:uppercase;
+}
 p, h2{
     margin-bottom: 0px !important ; 
 }
@@ -15,123 +52,133 @@ ol, ul {
     padding-left: 0px !important;
     margin: 0px;
 }
-.row{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+.btn-link{
+    @include font($color_primario, large, bold, "");
+    text-decoration: none !important;
+}
+.btn-link:hover{
+    color: $color_complementario !important;
+}
+.btn-outline-dark{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.btn-outline-dark:hover{
+    background-color: $color_hover;
+    color: $color_negro;
 }
 .navbar-brand {
     margin-right:0px !important;
 }
-.p-white{
-    color: $color_blanco;
-    font-size: 18px;
-    span{
-        font-weight: bolder;
-        color: $color_complementario;
-    }
+.navbar-toggler{
+    border: none;
 }
-.p-black{
-    color: $color_negro;
-    font-size: 18px;
-    span{
-        font-weight: bolder;
-        color: $color_primario;
-    }
+.navbar-toggler:focus{
+    box-shadow: none;
 }
-
-.header1{
-    background-color: $color_primario;
-    place-content: center;
-}
-.header1__text{
-    text-align: center;
-    font-size: 16px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: $color_blanco;
-}
-.header1__icons{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
-
-.header1__icons_icon{
-    background-color: $color_blanco;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    justify-content: space-evenly;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: $color_primario;
-}
-.header2{
-    background-color: $color_blanco;
-    height: auto;
-    width: 100%;
-}
-.header2__logo{
-    display: flex;
-    align-content: center;
-    margin-right: 0px !important;    
-}
-.header2__bar{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-}
-.header2__bar__links{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    justify-content: space-around;
-    color: $color_primario;
-}
-.header2__bar__icon{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    justify-content: space-around;
-    color: $color_primario;
-    font-size: 22px;
-}
-.footer__logo{
-    width: 50%;
-    display: inline-block;
-    margin-right: 0px !important;   
-}
-.sitio__construccion{
-    background-image: url(../img/icons/sitio-en-construccion.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    width: 100%;
-} 
-.up{
-    bottom: 23px;
-    right: 20px;
-    background-color: $color_complementario;
-    box-shadow: 0 0 5px $color_blanco, 0 0 5px $color_blanco;
-    border-radius: 55%;
-    color: $color_primario;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    justify-content: space-evenly;
-}
-.complementario{
-    color: $color_complementario;
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 .color{
     color: $color_primario;
 }
 .bg-color{
     background-color: $color_primario;
+}
+.p-black{
+    color: $color_negro;
+    font-size: 18px;
+    text-align: center;
+    span{
+        font-weight: bolder;
+        color: $color_primario;
+    }
+}
+.p-complementary{
+    color: $color_complementario;
+}
+.p-white{
+    color: $color_blanco;
+    font-size: 18px;
+    text-align: center;
+    span{
+        font-weight: bolder;
+        color: $color_complementario;
+    }
+}
+.header1{
+    background-color: $color_primario;
+    justify-content: center;
+}
+.header1__icons{
+    @include header(center, "", flex, space-evenly, "");
+    text-align: center;
+}
+.header1__icons_icon{
+    @include header(center, $color_primario, flex, space-evenly, none);
+    @include position(30px, 30px, "", "");
+    background-color: $color_blanco;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.header2{
+    @include position(auto, 100%, "", "");
+    background-color: $color_blanco;
+}
+.header2__logo{
+    align-content: center;
+    display: flex;
+    margin-right: 0px !important;    
+}
+.header2__bar{
+    @include font($color_primario, 20px, bold,"");
+    font-family: 'Rowdies', cursive;
+}
+.header2__bar__links{
+    @include header("", $color_primario, flex, space-around, none);
+    @include font("", 22px, bold,none);
+}
+.header2__bar__links:hover{
+    color: $color_complementario;  
+}
+.header2__bar__icon{
+    @include header("", $color_primario, flex, space-around, none);
+    @include font("", 22px, "",none);
+}
+.favicon{
+    width: 30px;
+    vertical-align: baseline;
+}
+#person{
+    --bs-gutter-x: 0rem !important;
+}
+.logo{
+    --bs-gutter-x: 1rem !important;
+}
+.footer{
+    color: $color_primario;
+}
+.footer:visited{
+    color: $color_primario;
+}
+.footer:hover{
+    color: $color_complementario;
+}
+.footer__text{
+    font-size: 19px;
+}
+.footer_border{
+    border-left: 4px solid $color_primario;
+}
+.up{
+    @include header(center, $color_primario, flex, space-evenly, none);
+    @include position(40px, 40px, 20px, "");
+    background-color: $color_complementario;
+    border-radius: 55%;
+    bottom: 23px;
+    box-shadow: 0 0 5px $color_blanco, 0 0 5px $color_blanco;
+    font-size: 30px;
 }
 @import "./scss/_home.scss";
 @import "./scss/_somos.scss";

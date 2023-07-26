@@ -1,9 +1,5 @@
 .somos__img{
-    width: 800px;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include fotos (800px, 450px, no-repeat, center, cover);
 }
 .somos__img1{
     background-image: url(./img/somos/somos1.webp);

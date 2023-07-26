@@ -1,9 +1,5 @@
 .servicios__img{
-    width: 600px;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include fotos (600px, 450px, no-repeat, center, cover);
 }
 
 @for $in from 1 through 8{

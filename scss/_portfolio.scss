@@ -1,20 +1,3 @@
-.porfolio__links{
-    text-decoration: none;   
-}
-.porfolio__links:hover{
-    color: $color_complementario; 
-}
-.portfolio__img{
-    height: 350px;
-    width: 250px;
-    align-content: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border: $color_primario solid 3px;
-}
-
-
 @for $in from 1 through 10{
     @each $port in bautismos , cumples , comuniones , bodas , empresariales , especiales{
     .portfolio__#{$port}#{$in} {
@@ -22,3 +5,18 @@
         }
     }
 } 
+.portfolio__img{
+    @include fotos (250px, 350px, no-repeat, center, contain);
+    align-content: center;
+    border: $color_primario solid 3px;
+}
+.porfolio__links{
+    text-decoration: none;   
+}
+.porfolio__links:hover{
+    color: $color_complementario; 
+}
+.portfolio_border{
+    border-bottom: 85px solid $color_primario;
+}
+
