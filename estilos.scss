@@ -146,12 +146,6 @@ ol, ul {
     @include header("", $color_primario, flex, space-around, none);
     @include font("", 22px, "",none);
 }
-.pre__favicon{
-    height: 30px;
-}
-.favicon{
-    vertical-align: baseline;
-}
 #person{
     --bs-gutter-x: 0rem !important;
 }
