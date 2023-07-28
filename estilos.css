@@ -173,8 +173,11 @@ ol, ul {
   list-style: none;
 }
 
+.pre__favicon {
+  height: 30px;
+}
+
 .favicon {
-  width: 30px;
   vertical-align: baseline;
 }
 
