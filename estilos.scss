@@ -137,10 +137,13 @@ ol, ul {
 }
 .header2__bar__links{
     @include header("", $color_primario, flex, space-around, none);
-    @include font("", 22px, bold,none);
+    @include font("", 20px, 700,none);
 }
 .header2__bar__links:hover{
     color: $color_complementario;  
+}
+.header2__bar__active{
+    @include font($color_complementario, 20px, 950,none);
 }
 .header2__bar__icon{
     @include header("", $color_primario, flex, space-around, none);

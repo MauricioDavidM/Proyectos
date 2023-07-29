@@ -152,13 +152,20 @@ ol, ul {
   justify-content: space-around;
   text-decoration: none;
   color: "";
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   list-style: none;
 }
 
 .header2__bar__links:hover {
   color: orange;
+}
+
+.header2__bar__active {
+  color: orange;
+  font-size: 20px;
+  font-weight: 950;
+  list-style: none;
 }
 
 .header2__bar__icon {
