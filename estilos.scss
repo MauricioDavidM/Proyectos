@@ -112,7 +112,7 @@ ol, ul {
     justify-content: center;
 }
 .header1__icons{
-    @include header(center, "", flex, space-evenly, "");
+    @include header(center, "", flex, space-around, "");
     text-align: center;
 }
 .header1__icons_icon{
@@ -131,13 +131,22 @@ ol, ul {
     display: flex;
     margin-right: 0px !important;    
 }
+.collapse{
+    width: 100% !important;
+}
+.navbar-nav{
+    width: 100% !important;
+}
+.nav-item{
+    width: 19% !important;
+}
 .header2__bar{
     @include font($color_primario, 20px, bold,"");
     font-family: 'Rowdies', cursive;
 }
 .header2__bar__links{
     @include header("", $color_primario, flex, space-around, none);
-    @include font("", 20px, 700,none);
+    @include font("", 100%, 700,none);
 }
 .header2__bar__links:hover{
     color: $color_complementario;  
@@ -184,3 +193,4 @@ ol, ul {
 @import "./scss/_servicios.scss";
 @import "./scss/_portfolio.scss";
 @import "./scss/_contacto.scss";
+@import "./scss/_productos.scss";
